@@ -1,0 +1,35 @@
+Generating report for minidump
+
+Application version 5.4.4.0
+ ... built from changelist 35576357
+
+OS version Linux 6.10.10-arch1-1 (network name: archlinux)
+Running 16 x86_64 processors (24 logical cores)
+Exception was "SIGSEGV: invalid attempt to write memory at address 0x0000000000000fc8"
+
+<SOURCE START>
+<SOURCE END>
+
+<CALLSTACK START>
+libUnrealEditor-Testing_Mechanic_1.so!AMain_Player::AMain_Player(FObjectInitializer const&) [/home/sage/Documents/GitHub/Testing_Mechanic_1/Testing_Mechanic_1/Source/Testing_Mechanic_1/Main_Player.cpp:15]
+libUnrealEditor-CoreUObject.so!UClass::CreateDefaultObject() [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/CoreUObject/Private/UObject/Class.cpp:4586]
+libUnrealEditor-CoreUObject.so!UClass::InternalCreateDefaultObjectWrapper() const [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/CoreUObject/Private/UObject/Class.cpp:5190]
+libUnrealEditor-CoreUObject.so!ProcessNewlyLoadedUObjects(FName, bool) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/CoreUObject/Private/UObject/UObjectBase.cpp:893]
+libUnrealEditor-CoreUObject.so!TBaseStaticDelegateInstance<void (FName, bool), FDefaultDelegateUserPolicy>::ExecuteIfSafe(FName, bool) const [/mnt/horde/++UE5/Sync/Engine/Source/Runtime/Core/Public/Delegates/DelegateInstancesImpl.h:775]
+libUnrealEditor-Core.so!void TMulticastDelegateBase<FDefaultDelegateUserPolicy>::Broadcast<IBaseDelegateInstance<void (FName, bool), FDefaultDelegateUserPolicy>, FName, bool>(FName, bool) const [/mnt/horde/++UE5/Sync/Engine/Source/Runtime/Core/Public/Delegates/MulticastDelegateBase.h:254]
+libUnrealEditor-Core.so!FModuleManager::LoadModuleWithFailureReason(FName, EModuleLoadResult&, ELoadModuleFlags) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Core/Private/Modules/ModuleManager.cpp:648]
+libUnrealEditor-Projects.so!FModuleDescriptor::LoadModulesForPhase(ELoadingPhase::Type, TArray<FModuleDescriptor, TSizedDefaultAllocator<32> > const&, TMap<FName, EModuleLoadResult, FDefaultSetAllocator, TDefaultMapHashableKeyFuncs<FName, EModuleLoadResult, false> >&) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Projects/Private/ModuleDescriptor.cpp:695]
+libUnrealEditor-Projects.so!FProjectManager::LoadModulesForProject(ELoadingPhase::Type) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Projects/Private/ProjectManager.cpp:60]
+UnrealEditor!FEngineLoop::LoadStartupModules() [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Launch/Private/LaunchEngineLoop.cpp:4738]
+UnrealEditor!FEngineLoop::PreInitPostStartupScreen(char16_t const*) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Launch/Private/LaunchEngineLoop.cpp:4000]
+UnrealEditor!GuardedMain(char16_t const*) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Launch/Private/Launch.cpp:136]
+libUnrealEditor-UnixCommonStartup.so!CommonUnixMain(int, char**, int (*)(char16_t const*), void (*)()) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Unix/UnixCommonStartup/Private/UnixCommonStartup.cpp:269]
+libc.so.6!UnknownFunction(0x25e07)
+libc.so.6!__libc_start_main(+0x8b)
+UnrealEditor!_start()
+
+<CALLSTACK END>
+
+0 loaded modules
+
+Report end!

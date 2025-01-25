@@ -1,0 +1,39 @@
+Generating report for minidump
+
+Application version 5.4.4.0
+ ... built from changelist 35576357
+
+OS version Linux 6.10.10-arch1-1 (network name: archlinux)
+Running 16 x86_64 processors (24 logical cores)
+Exception was "Ensure condition failed: bHasNoScale  [File:./../Plugins/Animation/IKRig/Source/IKRig/Private/Retargeter/IKRetargetProcessor.cpp] [Line: 1891] "
+
+<SOURCE START>
+<SOURCE END>
+
+<CALLSTACK START>
+libUnrealEditor-IKRig.so!UIKRetargetProcessor::RunRetargeter(TArray<UE::Math::TTransform<double>, TSizedDefaultAllocator<32> > const&, TMap<FName, float, FDefaultSetAllocator, TDefaultMapHashableKeyFuncs<FName, float, false> > const&, float)::$_0::operator()() const [/mnt/horde/++UE5/Sync/Engine/Source/./../Plugins/Animation/IKRig/Source/IKRig/Private/Retargeter/IKRetargetProcessor.cpp:1891]
+libUnrealEditor-IKRig.so!UIKRetargetProcessor::RunRetargeter(TArray<UE::Math::TTransform<double>, TSizedDefaultAllocator<32> > const&, TMap<FName, float, FDefaultSetAllocator, TDefaultMapHashableKeyFuncs<FName, float, false> > const&, float) [/mnt/horde/++UE5/Sync/Engine/Source/./../Plugins/Animation/IKRig/Source/IKRig/Private/Retargeter/IKRetargetProcessor.cpp:1891]
+libUnrealEditor-IKRigEditor.so!UIKRetargetBatchOperation::ConvertAnimation(FIKRetargetBatchOperationContext const&, FScopedSlowTask&) [/mnt/horde/++UE5/Sync/Engine/Source/./../Plugins/Animation/IKRig/Source/IKRigEditor/Private/RetargetEditor/IKRetargetBatchOperation.cpp:444]
+libUnrealEditor-IKRigEditor.so!UIKRetargetBatchOperation::RetargetAssets(FIKRetargetBatchOperationContext const&, FScopedSlowTask&) [/mnt/horde/++UE5/Sync/Engine/Source/./../Plugins/Animation/IKRig/Source/IKRigEditor/Private/RetargetEditor/IKRetargetBatchOperation.cpp:281]
+libUnrealEditor-IKRigEditor.so!UIKRetargetBatchOperation::RunRetarget(FIKRetargetBatchOperationContext&) [/mnt/horde/++UE5/Sync/Engine/Source/./../Plugins/Animation/IKRig/Source/IKRigEditor/Private/RetargetEditor/IKRetargetBatchOperation.cpp:845]
+libUnrealEditor-IKRigEditor.so!SRetargetAnimAssetsWindow::OnExportAnimations() [/mnt/horde/++UE5/Sync/Engine/Source/./../Plugins/Animation/IKRig/Source/IKRigEditor/Private/RetargetEditor/SRetargetAnimAssetsWindow.cpp:1083]
+libUnrealEditor-IKRigEditor.so!TBaseSPMethodDelegateInstance<false, SRetargetAnimAssetsWindow, (ESPMode)1, FReply (), FDefaultDelegateUserPolicy>::Execute() const [/mnt/horde/++UE5/Sync/Engine/Source/Runtime/Core/Public/Delegates/DelegateInstancesImpl.h:281]
+libUnrealEditor-Slate.so!SButton::ExecuteOnClick() [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Slate/Private/Widgets/Input/SButton.cpp:465]
+libUnrealEditor-Slate.so!SButton::OnMouseButtonUp(FGeometry const&, FPointerEvent const&) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Slate/Private/Widgets/Input/SButton.cpp:390]
+libUnrealEditor-Slate.so!FSlateApplication::RoutePointerUpEvent(FWidgetPath const&, FPointerEvent const&) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Slate/Private/Framework/Application/SlateApplication.cpp:5280]
+libUnrealEditor-Slate.so!FSlateApplication::ProcessMouseButtonUpEvent(FPointerEvent const&) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Slate/Private/Framework/Application/SlateApplication.cpp:5857]
+libUnrealEditor-Slate.so!FSlateApplication::OnMouseUp(EMouseButtons::Type, UE::Math::TVector2<double>) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Slate/Private/Framework/Application/SlateApplication.cpp:5813]
+libUnrealEditor-ApplicationCore.so!FLinuxApplication::ProcessDeferredMessage(SDL_Event) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/ApplicationCore/Private/Linux/LinuxApplication.cpp:427]
+libUnrealEditor-ApplicationCore.so!FLinuxPlatformApplicationMisc::PumpMessages(bool) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/ApplicationCore/Private/Linux/LinuxPlatformApplicationMisc.cpp:442]
+UnrealEditor!FEngineLoop::Tick() [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Launch/Private/LaunchEngineLoop.cpp:5844]
+UnrealEditor!GuardedMain(char16_t const*) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Launch/Private/Launch.cpp:182]
+libUnrealEditor-UnixCommonStartup.so!CommonUnixMain(int, char**, int (*)(char16_t const*), void (*)()) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Unix/UnixCommonStartup/Private/UnixCommonStartup.cpp:269]
+libc.so.6!UnknownFunction(0x25e07)
+libc.so.6!__libc_start_main(+0x8b)
+UnrealEditor!_start()
+
+<CALLSTACK END>
+
+0 loaded modules
+
+Report end!

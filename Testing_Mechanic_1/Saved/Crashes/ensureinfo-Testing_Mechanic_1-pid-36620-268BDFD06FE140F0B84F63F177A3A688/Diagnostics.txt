@@ -1,0 +1,37 @@
+Generating report for minidump
+
+Application version 5.4.4.0
+ ... built from changelist 35576357
+
+OS version Linux 6.10.10-arch1-1 (network name: archlinux)
+Running 16 x86_64 processors (24 logical cores)
+Exception was "Ensure condition failed: Registrations.Num() == 0  [File:../Plugins/Experimental/LocalizableMessage/Source/LocalizableMessage/Public/LocalizableMessageProcessor.h] [Line: 24] "
+
+<SOURCE START>
+<SOURCE END>
+
+<CALLSTACK START>
+libUnrealEditor-LocalizableMessage.so!FLocalizableMessageProcessor::FScopedRegistrations::~FScopedRegistrations() [/mnt/horde/++UE5/Sync/Engine/Source/../Plugins/Experimental/LocalizableMessage/Source/LocalizableMessage/Public/LocalizableMessageProcessor.h:24]
+libc.so.6!UnknownFunction(0x3f890)
+libc.so.6!exit(+0x1d)
+libX11.so.6!_XDefaultIOError(+0x6a)
+libX11.so.6!_XIOError(+0x6b)
+libX11.so.6!_XEventsQueued(+0x8e)
+libX11.so.6!XFlush(+0x26)
+libUnrealEditor-ApplicationCore.so!X11_ShowCursor [/SDL-gui-backend/src/video/x11/SDL_x11mouse.c:308]
+libUnrealEditor-Slate.so!FSlateUser::QueryCursor() [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Slate/Private/Framework/Application/SlateUser.cpp:843]
+libUnrealEditor-Slate.so!FSlateUser::UpdateCursor() [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Slate/Private/Framework/Application/SlateUser.cpp:899]
+libUnrealEditor-Slate.so!FSlateApplication::TickPlatform(float) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Slate/Private/Framework/Application/SlateApplication.cpp:1606]
+libUnrealEditor-Slate.so!FSlateApplication::Tick(ESlateTickType) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Slate/Private/Framework/Application/SlateApplication.cpp:1533]
+UnrealEditor!FEngineLoop::Tick() [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Launch/Private/LaunchEngineLoop.cpp:5976]
+UnrealEditor!GuardedMain(char16_t const*) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Launch/Private/Launch.cpp:182]
+libUnrealEditor-UnixCommonStartup.so!CommonUnixMain(int, char**, int (*)(char16_t const*), void (*)()) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Unix/UnixCommonStartup/Private/UnixCommonStartup.cpp:269]
+libc.so.6!UnknownFunction(0x25e07)
+libc.so.6!__libc_start_main(+0x8b)
+UnrealEditor!_start()
+
+<CALLSTACK END>
+
+0 loaded modules
+
+Report end!

@@ -1,0 +1,38 @@
+Generating report for minidump
+
+Application version 5.4.4.0
+ ... built from changelist 35576357
+
+OS version Linux 6.10.10-arch1-1 (network name: archlinux)
+Running 16 x86_64 processors (24 logical cores)
+Exception was "SIGSEGV: invalid attempt to read memory at address 0x00007ae880000000"
+
+<SOURCE START>
+<SOURCE END>
+
+<CALLSTACK START>
+libUnrealEditor-Engine.so!UScriptStruct::TCppStructOps<FAnimSubsystemInstance>::Destruct(void*) [/mnt/horde/++UE5/Sync/Engine/Source/Runtime/CoreUObject/Public/UObject/Class.h:1276]
+libUnrealEditor-CoreUObject.so!UScriptStruct::DestroyStruct(void*, int) const [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/CoreUObject/Private/UObject/Class.cpp:3479]
+libUnrealEditor-CoreUObject.so!FStructProperty::DestroyValueInternal(void*) const [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/CoreUObject/Private/UObject/PropertyStruct.cpp:374]
+libUnrealEditor-CoreUObject.so!UObject::DestroyNonNativeProperties() [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/CoreUObject/Private/Blueprint/BlueprintSupport.cpp:2619]
+libUnrealEditor-CoreUObject.so!UObject::FinishDestroy() [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/CoreUObject/Private/UObject/Obj.cpp:1035]
+libUnrealEditor-CoreUObject.so!UObject::ConditionalFinishDestroy() [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/CoreUObject/Private/UObject/Obj.cpp:1238]
+libUnrealEditor-CoreUObject.so!IncrementalPurgeGarbage(bool, double) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/CoreUObject/Private/UObject/GarbageCollection.cpp:4574]
+libUnrealEditor-CoreUObject.so!void UE::GC::PostCollectGarbageImpl<true>(EObjectFlags) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/CoreUObject/Private/UObject/GarbageCollection.cpp:5580]
+libUnrealEditor-CoreUObject.so!UE::GC::FReachabilityAnalysisState::PerformReachabilityAnalysisAndConditionallyPurgeGarbage(bool) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/CoreUObject/Private/UObject/GarbageCollection.cpp:5770]
+libUnrealEditor-CoreUObject.so!CollectGarbage(EObjectFlags, bool) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/CoreUObject/Private/UObject/GarbageCollection.cpp:6007]
+libUnrealEditor-UnrealEd.so!UEditorEngine::EndPlayMap() [/mnt/horde/++UE5/Sync/Engine/Source/./Editor/UnrealEd/Private/PlayLevel.cpp:474]
+libUnrealEditor-UnrealEd.so!UEditorEngine::Tick(float, bool) [/mnt/horde/++UE5/Sync/Engine/Source/./Editor/UnrealEd/Private/EditorEngine.cpp:2345]
+libUnrealEditor-UnrealEd.so!UUnrealEdEngine::Tick(float, bool) [/mnt/horde/++UE5/Sync/Engine/Source/./Editor/UnrealEd/Private/UnrealEdEngine.cpp:547]
+UnrealEditor!FEngineLoop::Tick() [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Launch/Private/LaunchEngineLoop.cpp:5915]
+UnrealEditor!GuardedMain(char16_t const*) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Launch/Private/Launch.cpp:182]
+libUnrealEditor-UnixCommonStartup.so!CommonUnixMain(int, char**, int (*)(char16_t const*), void (*)()) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Unix/UnixCommonStartup/Private/UnixCommonStartup.cpp:269]
+libc.so.6!UnknownFunction(0x25e07)
+libc.so.6!__libc_start_main(+0x8b)
+UnrealEditor!_start()
+
+<CALLSTACK END>
+
+0 loaded modules
+
+Report end!

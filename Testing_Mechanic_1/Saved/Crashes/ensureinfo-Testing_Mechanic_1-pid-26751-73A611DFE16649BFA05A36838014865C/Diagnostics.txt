@@ -1,0 +1,46 @@
+Generating report for minidump
+
+Application version 5.4.4.0
+ ... built from changelist 35576357
+
+OS version Linux 6.10.10-arch1-1 (network name: archlinux)
+Running 16 x86_64 processors (24 logical cores)
+Exception was "Ensure condition failed: this->IsBound()  [File:/home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4/Engine/Source/Runtime/Core/Public/Delegates/DelegateSignatureImpl.inl] [Line: 1021] "
+
+<SOURCE START>
+<SOURCE END>
+
+<CALLSTACK START>
+libUnrealEditor-Testing_Mechanic_1-4339.so!void TBaseDynamicDelegate<FNotThreadSafeDelegateMode, void, UAnimMontage*, bool>::__Internal_BindDynamic<AMain_Player_2>(AMain_Player_2*, TBaseDynamicDelegate<FNotThreadSafeDelegateMode, void, UAnimMontage*, bool>::TMethodPtrResolver<AMain_Player_2>::FMethodPtr, FName)::'lambda'()::operator()() const [/home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4/Engine/Source/Runtime/Core/Public/Delegates/DelegateSignatureImpl.inl:1021]
+libUnrealEditor-Testing_Mechanic_1-4339.so!void TBaseDynamicDelegate<FNotThreadSafeDelegateMode, void, UAnimMontage*, bool>::__Internal_BindDynamic<AMain_Player_2>(AMain_Player_2*, TBaseDynamicDelegate<FNotThreadSafeDelegateMode, void, UAnimMontage*, bool>::TMethodPtrResolver<AMain_Player_2>::FMethodPtr, FName) [/home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4/Engine/Source/Runtime/Core/Public/Delegates/DelegateSignatureImpl.inl:1021]
+libUnrealEditor-Testing_Mechanic_1-4339.so!AMain_Player_2::PlayDodgeAnimMontages(UAnimMontage*) [/home/sage/Documents/GitHub/Testing_Mechanic_1/Testing_Mechanic_1/Source/Testing_Mechanic_1/Private/Main_Player_2.cpp:175]
+libUnrealEditor-Testing_Mechanic_1-4339.so!void TEnhancedInputUnifiedDelegate<TDelegate<void (), FDefaultDelegateUserPolicy> >::Execute<>() const [/home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4/Engine/Source/../Plugins/EnhancedInput/Source/EnhancedInput/Public/EnhancedInputComponent.h:119]
+libUnrealEditor-EnhancedInput.so!UEnhancedPlayerInput::EvaluateInputDelegates(TArray<UInputComponent*, TSizedDefaultAllocator<32> > const&, float, bool, TArray<TTuple<FKey, FKeyState*>, TSizedDefaultAllocator<32> > const&) [/mnt/horde/++UE5/Sync/Engine/Source/./../Plugins/EnhancedInput/Source/EnhancedInput/Private/EnhancedPlayerInput.cpp:630]
+libUnrealEditor-Engine.so!UPlayerInput::ProcessInputStack(TArray<UInputComponent*, TSizedDefaultAllocator<32> > const&, float, bool) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Engine/Private/UserInterface/PlayerInput.cpp:1147]
+libUnrealEditor-Engine.so!APlayerController::ProcessPlayerInput(float, bool) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Engine/Private/PlayerController.cpp:2738]
+libUnrealEditor-Engine.so!APlayerController::TickPlayerInput(float, bool) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Engine/Private/PlayerController.cpp:5034]
+libUnrealEditor-Engine.so!APlayerController::PlayerTick(float) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Engine/Private/PlayerController.cpp:2340]
+libUnrealEditor-Engine.so!APlayerController::TickActor(float, ELevelTick, FActorTickFunction&) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Engine/Private/PlayerController.cpp:5194]
+libUnrealEditor-Engine.so!FActorTickFunction::ExecuteTick(float, ELevelTick, ENamedThreads::Type, TRefCountPtr<FGraphEvent> const&) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Engine/Private/Actor.cpp:238]
+libUnrealEditor-Engine.so!FTickFunctionTask::DoTask(ENamedThreads::Type, TRefCountPtr<FGraphEvent> const&) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Engine/Private/TickTaskManager.cpp:275]
+libUnrealEditor-Engine.so!TGraphTask<FTickFunctionTask>::ExecuteTask(TArray<FBaseGraphTask*, TSizedDefaultAllocator<32> >&, ENamedThreads::Type, bool) [/mnt/horde/++UE5/Sync/Engine/Source/Runtime/Core/Public/Async/TaskGraphInterfaces.h:1235]
+libUnrealEditor-Core.so!FNamedTaskThread::ProcessTasksNamedThread(int, bool) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Core/Private/Async/TaskGraph.cpp:760]
+libUnrealEditor-Core.so!FNamedTaskThread::ProcessTasksUntilQuit(int) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Core/Private/Async/TaskGraph.cpp:650]
+libUnrealEditor-Core.so!FTaskGraphCompatibilityImplementation::WaitUntilTasksComplete(TArray<TRefCountPtr<FGraphEvent>, TSizedInlineAllocator<4u, 32, TSizedDefaultAllocator<32> > > const&, ENamedThreads::Type) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Core/Private/Async/TaskGraph.cpp:2122]
+libUnrealEditor-Engine.so!FTickTaskSequencer::ReleaseTickGroup(ETickingGroup, bool) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Engine/Private/TickTaskManager.cpp:555]
+libUnrealEditor-Engine.so!FTickTaskManager::RunTickGroup(ETickingGroup, bool) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Engine/Private/TickTaskManager.cpp:1582]
+libUnrealEditor-Engine.so!UWorld::Tick(ELevelTick, float) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Engine/Private/LevelTick.cpp:1499]
+libUnrealEditor-UnrealEd.so!UEditorEngine::Tick(float, bool) [/mnt/horde/++UE5/Sync/Engine/Source/./Editor/UnrealEd/Private/EditorEngine.cpp:2013]
+libUnrealEditor-UnrealEd.so!UUnrealEdEngine::Tick(float, bool) [/mnt/horde/++UE5/Sync/Engine/Source/./Editor/UnrealEd/Private/UnrealEdEngine.cpp:547]
+UnrealEditor!FEngineLoop::Tick() [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Launch/Private/LaunchEngineLoop.cpp:5915]
+UnrealEditor!GuardedMain(char16_t const*) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Launch/Private/Launch.cpp:182]
+libUnrealEditor-UnixCommonStartup.so!CommonUnixMain(int, char**, int (*)(char16_t const*), void (*)()) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Unix/UnixCommonStartup/Private/UnixCommonStartup.cpp:269]
+libc.so.6!UnknownFunction(0x25e07)
+libc.so.6!__libc_start_main(+0x8b)
+UnrealEditor!_start()
+
+<CALLSTACK END>
+
+0 loaded modules
+
+Report end!
