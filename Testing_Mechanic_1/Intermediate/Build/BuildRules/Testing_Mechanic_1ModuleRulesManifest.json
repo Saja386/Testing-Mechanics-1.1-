@@ -1,0 +1,8 @@
+{
+	"SourceFiles": [
+		"/home/sage/Documents/GitHub/Testing_Mechanic_1/Testing_Mechanic_1/Source/Testing_Mechanic_1/Testing_Mechanic_1.Build.cs",
+		"/home/sage/Documents/GitHub/Testing_Mechanic_1/Testing_Mechanic_1/Source/Testing_Mechanic_1.Target.cs",
+		"/home/sage/Documents/GitHub/Testing_Mechanic_1/Testing_Mechanic_1/Source/Testing_Mechanic_1Editor.Target.cs"
+	],
+	"EngineVersion": "5.4.4"
+}
