@@ -56,6 +56,8 @@
 				"/home/sage/Documents/GitHub/Testing-Mechanics-1.1-/Testing_Mechanic_1/Content/Enemy/Bluprint/EnemyBaseAnimBluprint.uasset",
 				"/home/sage/Documents/GitHub/Testing-Mechanics-1.1-/Testing_Mechanic_1/Content/ParagonRampage/Characters/Heroes/Rampage/Animations/Attack_Melee_B_Montage.uasset",
 				"/home/sage/Documents/GitHub/Testing-Mechanics-1.1-/Testing_Mechanic_1/Content/Enemy/AI/BehaviorTreeTasks/BTT_DefaultAttack.uasset",
+				"/home/sage/Documents/GitHub/Testing-Mechanics-1.1-/Testing_Mechanic_1/Content/Enemy/AI/BehaviorTreeTasks/BTT_FocusOnTarget.uasset",
+				"/home/sage/Documents/GitHub/Testing-Mechanics-1.1-/Testing_Mechanic_1/Content/Enemy/AI/BehaviorTreeTasks/BTT_ClearFocus.uasset",
 				"/home/sage/Documents/GitHub/Testing_Mechanic_1/Testing_Mechanic_1/Content/Player/Animation/Dodge/Standing_Dodge_Right_Anim.uasset",
 				"/home/sage/Documents/GitHub/Testing_Mechanic_1/Testing_Mechanic_1/Content/Player/Animation/Dodge/Standing_Dodge_Left.uasset",
 				"/home/sage/Documents/GitHub/Testing_Mechanic_1/Testing_Mechanic_1/Content/Player/Animation/Dodge/Standing_Dodge_Forward.uasset",
